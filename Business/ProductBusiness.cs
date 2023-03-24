@@ -15,7 +15,7 @@
         /// <summary>
         /// Get all producst from the database
         /// </summary>
-        public List<Product> GetAll()
+        public List<Car> GetAll()
         {
             using (productContext = new ProductContext())
             {
@@ -26,7 +26,7 @@
         /// <summary>
         /// Get single product from the database by Id
         /// </summary>
-        public Product Get(int id)
+        public Car Get(int id)
         {
             using (productContext = new ProductContext())
             {
@@ -37,7 +37,7 @@
         /// <summary>
         /// Add a product to the database
         /// </summary>
-        public void Add(Product product)
+        public void Add(Car product)
         {
             using (productContext = new ProductContext())
             {
@@ -49,7 +49,7 @@
         /// <summary>
         /// Update a single product in the database by Id.
         /// </summary>
-        public void Update(Product product)
+        public void Update(Car product)
         {
             using (productContext = new ProductContext())
             {

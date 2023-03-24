@@ -11,7 +11,7 @@
         /// <summary>
         /// Products Table
         /// </summary>
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Car> Products { get; set; }
 
         /// <summary>
         /// Constructor
@@ -27,7 +27,7 @@
         /// </summary>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Database=shop; Integrated Security=True");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Database=CarShop2023; Integrated Security=True");
         }
     }
 }
